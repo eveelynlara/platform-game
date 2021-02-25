@@ -1,0 +1,16 @@
+[C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game\eth.log.txt]
+Backbuffer created as 854, 480 on default backbuffer mode
+____________________________
+
+Loading game script from source-code: main.angelscript
+
+
+Compile time: 16 milliseconds
+ByteCode saved: C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game\game.bin
+(Loaded) start_game.png
+(Loaded) single-pieces.png
+(Loaded) tiles.png
+(Loaded) transition-tiles.png
+(Loaded) return_button.png
+(Loaded) background.png
+(Loaded) witch.png
