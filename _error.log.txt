@@ -1,0 +1,6 @@
+[C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game\_error.log.txt]
+[ERROR] src/gameplay/CharacterCameraController.angelscript, line 38: Expected ')' or ','
+[ERROR] src/gameplay/CharacterCameraController.angelscript, line 38: Instead found '+'
+
+[ERROR] src/gameplay/CharacterCameraController.angelscript, line 48: Unexpected token '}'
+ERROR - Failed while building module.
