@@ -11,7 +11,6 @@
 #include "src/character/Character.angelscript"
 #include "src/character/CharacterController.angelscript"
 #include "src/character/MainCharacterController.angelscript"
-
 #include "src/character/NPCFollowPlayerController.angelscript"
 
 #include "src/gameplay/CameraController.angelscript"

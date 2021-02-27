@@ -8,7 +8,7 @@
 	private Character@ m_npcFollower;
 	
 	private NPCFollowPlayerController m_npcFollowerController;
-	
+
 	private CameraController@ m_cameraController;
 
 	GameScene()
@@ -42,6 +42,8 @@
 		
 		m_character.update(@m_characterController);
 		m_npcFollower.update(@m_npcFollowerController);
+
+		m_character.update(@m_characterController);
 
 		m_cameraController.update();
 
