@@ -1,4 +1,0 @@
-[C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game\_error.log.txt]
-
-[ERROR] src/character/NPCFollowPlayerController.angelscript, line 43: No matching signatures to 'checkSinglePieceTouch()'
-ERROR - Failed while building module.

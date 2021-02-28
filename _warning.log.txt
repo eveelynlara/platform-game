@@ -1,3 +1,0 @@
-[C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game - nova branch\_warning.log.txt]
-
-[WARN ] src/game-state/GameScene.angelscript, line 35: Float value truncated in implicit conversion to integer
