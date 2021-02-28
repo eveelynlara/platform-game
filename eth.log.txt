@@ -1,12 +1,12 @@
-[C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game-master\eth.log.txt]
+[C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game\eth.log.txt]
 Backbuffer created as 854, 480 on default backbuffer mode
 ____________________________
 
 Loading game script from source-code: main.angelscript
 
 
-Compile time: 0 milliseconds
-ByteCode saved: C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game-master\game.bin
+Compile time: 16 milliseconds
+ByteCode saved: C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game\game.bin
 (Loaded) start_game.png
 (Loaded) single-pieces.png
 (Loaded) tiles.png

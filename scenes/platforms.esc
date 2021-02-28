@@ -308,6 +308,14 @@
                 <CustomData />
             </Entity>
         </Entity>
+        <Entity id="232" spriteFrame="0">
+            <EntityName>transition_tile.ent</EntityName>
+            <Position x="608" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>transition_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
         <Entity id="80" spriteFrame="0">
             <EntityName>tile.ent</EntityName>
             <Position x="1056" y="448" z="0" angle="0" />

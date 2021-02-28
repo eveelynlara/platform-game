@@ -1,15 +1,15 @@
 ﻿class GameScene : Scene
 {
 	private Button@ m_exitButton;
+	
 	private Character@ m_character;
-
 	private MainCharacterController m_characterController;
 
 	private Character@ m_npcFollower;
-	
 	private NPCFollowPlayerController m_npcFollowerController;
 
 	private CameraController@ m_cameraController;
+	/*private CharacterController@ m_characterFollowed;*/
 
 	GameScene()
 	{
@@ -30,20 +30,17 @@
 		@m_npcFollower = Character("flameDragon.ent", vector2(screenMiddle.x - 100.0f, screenMiddle.y));
 		
 		@m_cameraController = CharacterCameraController(@m_character);
+		
+		/*@m_characterFollowed = NPCFollowPlayerController(@m_character);*/
 	}
 
 	void onUpdate() override
 	{
 		m_characterController.update();
-
 		m_character.update(@m_characterController);
-
-		m_npcFollowerController.update();
 		
-		m_character.update(@m_characterController);
+		m_npcFollowerController.update(@m_npcFollower, @m_character);
 		m_npcFollower.update(@m_npcFollowerController);
-
-		m_character.update(@m_characterController);
 
 		m_cameraController.update();
 

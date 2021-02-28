@@ -1,3 +1,4 @@
-[C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game-master\_error.log.txt]
-[ERROR] src/game-state/GameScene.angelscript, line 12: Name conflict. 'm_characterController' is an object property.
+[C:\Users\evely\Documents\Programacao\Ethanon\ProjetosEthanon\platform-game\_error.log.txt]
+
+[ERROR] src/character/NPCFollowPlayerController.angelscript, line 43: No matching signatures to 'checkSinglePieceTouch()'
 ERROR - Failed while building module.
