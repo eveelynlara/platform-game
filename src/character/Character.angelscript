@@ -7,26 +7,33 @@
 	private uint m_frameColumn = 0;
 	private bool m_touchingGround = false;
 	private int m_jumpInTheAirCount = 0;
-	private int m_maxJumpsInTheAir = 1;
-
+	private int m_maxJumpsInTheAir = 10;
+	private CharacterController@ m_characterController = DummyController();
+	
 	Character(const string &in entityName, const vector2 pos)
 	{
 		// add character entity and rename it to "character" for matching character-
 		// specific entity callback functions
-		const int id = AddEntity(entityName, vector3(pos, -2.0f), "Character");
-		@m_entity = SeekEntity(id);
+		AddEntity(entityName, vector3(pos, -2.0f), 0.0f /*rotation*/, m_entity, "Character", 1.0f /*scale*/);
+	}
+	
+	void setController(CharacterController@ characterController)
+	{
+		@m_characterController = @characterController;
 	}
 
-	void update(CharacterController@ characterController)
+	void update()
 	{
+		m_characterController.update();
+		
 		ETHPhysicsController@ physicsController = m_entity.GetPhysicsController();
 
 		// never let character body sleep
 		physicsController.SetAwake(true);
 
 		checkGroundTouch();
-		updateMovement(@physicsController, characterController.getMovementSpeed());
-		updateJumpImpulse(@physicsController, characterController.getJumpImpulse());
+		updateMovement(@physicsController, m_characterController.getMovementSpeed());
+		updateJumpImpulse(@physicsController, m_characterController.getJumpImpulse());
 
 		// update entity animation frame
 		m_entity.SetFrame(m_frameColumn, m_directionLine);

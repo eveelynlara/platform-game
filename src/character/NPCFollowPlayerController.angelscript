@@ -12,18 +12,15 @@
 	
 	private bool m_touchingSinglePiece = false;
 		
-	/*NPCFollowPlayerController(Character@ npcCharacter, Character@ characterFollowed)
+	NPCFollowPlayerController(Character@ npcCharacter, Character@ characterFollowed)
 	{
-		@m_character = character;
 		@m_npcCharacter = npcCharacter;
-	}*/
-
-	void update(Character@ npcCharacter, Character@ characterFollowed)
-	{
 		@m_character = characterFollowed;
+	}
+
+	void update() override
+	{
 		m_followedCharacterPos = m_character.getPosition();
-		
-		@m_npcCharacter = npcCharacter;
 		m_npcCharacterPos = m_npcCharacter.getPosition();
 
 		m_movementSpeed = 0.0f;
@@ -39,14 +36,6 @@
 			
 		if (m_followedCharacterPos.x < m_npcCharacterPos.x - 70.f)
 			m_movementSpeed = -npcSpeed;
-			
-		//~ if (checkSinglePieceTouch())
-			//~ m_jumpImpulse =-jumpImpulse;
-	}
-	
-	void update()
-	{
-				
 	}
 
 	float getMovementSpeed() const
