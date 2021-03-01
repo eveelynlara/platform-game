@@ -6,11 +6,10 @@
 	private MainCharacterController m_characterController;
 
 	private Character@ m_npcFollower;
-	private NPCFollowPlayerController m_npcFollowerController;
+	private NPCFollowPlayerController@ m_npcFollowerController;
 
 	private CameraController@ m_cameraController;
-	/*private CharacterController@ m_characterFollowed;*/
-
+	
 	GameScene()
 	{
 		const string sceneName = "scenes/platforms.esc";
@@ -31,7 +30,7 @@
 		
 		@m_cameraController = CharacterCameraController(@m_character);
 		
-		/*@m_characterFollowed = NPCFollowPlayerController(@m_character);*/
+		@m_npcFollowerController = NPCFollowPlayerController(@m_npcFollower, @m_character);
 	}
 
 	void onUpdate() override
@@ -39,7 +38,7 @@
 		m_characterController.update();
 		m_character.update(@m_characterController);
 		
-		m_npcFollowerController.update(@m_npcFollower, @m_character);
+		m_npcFollowerController.update();
 		m_npcFollower.update(@m_npcFollowerController);
 
 		m_cameraController.update();
