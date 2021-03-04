@@ -6,6 +6,7 @@
 	private Character@ m_npcFollower;
 	
 	private CharactersManager m_charactersManager;
+
 	private CameraController@ m_cameraController;
 	
 	GameScene()
