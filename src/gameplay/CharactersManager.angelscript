@@ -10,7 +10,7 @@ class CharactersManager
 	
 	void update()
 	{
-		for(int i = 0; i < m_character.length(); i++)
+		for(uint i = 0; i < m_character.length(); i++)
 		{
 			m_character[i].update();
 		}
