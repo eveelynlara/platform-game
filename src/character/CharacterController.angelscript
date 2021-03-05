@@ -1,6 +1,6 @@
 ﻿interface CharacterController
 {
-	void update();
+	void update(Character@ thisCharacter);
 	float getMovementSpeed() const;
 	float getJumpImpulse() const;
 }

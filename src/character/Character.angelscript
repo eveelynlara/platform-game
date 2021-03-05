@@ -24,8 +24,8 @@
 
 	void update()
 	{
-		m_characterController.update();
-		
+		m_characterController.update(@this);
+	
 		ETHPhysicsController@ physicsController = m_entity.GetPhysicsController();
 
 		// never let character body sleep

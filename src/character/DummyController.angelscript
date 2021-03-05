@@ -1,6 +1,6 @@
 ﻿class DummyController : CharacterController
 {
-	void update() override
+	void update(Character@ thisCharacter) override
 	{
 	}
 

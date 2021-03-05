@@ -5,23 +5,21 @@
 	private float m_jumpImpulse = 0.0f;
 
 	private Character@ m_character;
-	private Character@ m_npcCharacter;
 	
 	vector2 m_followedCharacterPos;
 	vector2 m_npcCharacterPos;
 	
 	private bool m_touchingSinglePiece = false;
 		
-	NPCFollowPlayerController(Character@ npcCharacter, Character@ characterFollowed)
+	NPCFollowPlayerController(Character@ characterFollowed)
 	{
-		@m_npcCharacter = npcCharacter;
 		@m_character = characterFollowed;
 	}
 
-	void update() override
+	void update(Character@ thisCharacter) override
 	{
 		m_followedCharacterPos = m_character.getPosition();
-		m_npcCharacterPos = m_npcCharacter.getPosition();
+		m_npcCharacterPos = thisCharacter.getPosition();
 
 		m_movementSpeed = 0.0f;
 		m_jumpImpulse = 0.0f;
