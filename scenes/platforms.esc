@@ -389,7 +389,7 @@
         </Entity>
         <Entity id="198" spriteFrame="0">
             <EntityName>cam_max.ent</EntityName>
-            <Position x="1924" y="474" z="0" angle="0" />
+            <Position x="1924" y="480" z="0" angle="0" />
             <Entity shape="0" applyLight="0" castShadow="0" type="0" static="1" blendMode="0">
                 <CustomData />
             </Entity>
