@@ -13,6 +13,11 @@
 			scene.getBucketSize());
 	}
 
+	Scene@ getCurrentScene() 
+	{ 
+		return @m_currentScene; 
+	} 
+
 	void runOnSceneCreatedFunction()
 	{
 		if (m_currentScene !is null)

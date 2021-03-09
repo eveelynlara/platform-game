@@ -8,3 +8,5 @@ eth_util.angelscript
 eth.log.txt
 game.bin
 machine.exe
+*.dll
+*.txt

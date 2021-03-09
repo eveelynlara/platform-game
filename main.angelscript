@@ -7,6 +7,7 @@
 #include "src/utils/Button.angelscript"
 #include "src/utils/FrameTimer.angelscript"
 #include "src/utils/isPointInRect.angelscript"
+#include "src/utils/MathUtils.angelscript"
 
 #include "src/character/Character.angelscript"
 #include "src/character/CharacterController.angelscript"
@@ -18,10 +19,11 @@
 #include "src/gameplay/CharacterCameraController.angelscript"
 #include "src/gameplay/CharactersManager.angelscript"
 #include "src/gameplay/StaticCameraController.angelscript"
+#include "src/gameplay/Spawner.angelscript"
 
 void main()
 {
-	SetFixedHeight(720.0f);
+	SetFixedHeight(480.0f);
 
 	g_sceneManager.setCurrentScene(MainMenuScene());
 }

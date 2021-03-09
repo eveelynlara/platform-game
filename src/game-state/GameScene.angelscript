@@ -3,7 +3,7 @@
 	private Button@ m_exitButton;
 	
 	private Character@ m_character;
-	private Character@ m_npcFollower;
+	//private Character@ m_npcFollower;
 	
 	private CharactersManager m_charactersManager;
 
@@ -28,11 +28,11 @@
 		
 		@m_cameraController = CharacterCameraController(@m_character);
 		
-		@m_npcFollower = Character("flameDragon.ent", vector2(screenMiddle.x - 100.0f, screenMiddle.y));
-		m_npcFollower.setController(NPCFollowPlayerController(@m_character));
+		//@m_npcFollower = Character("flameDragon.ent", vector2(screenMiddle.x - 100.0f, screenMiddle.y));
+		//m_npcFollower.setController(NPCFollowPlayerController(@m_character));
 		
 		m_charactersManager.addCharacter(@m_character);
-		m_charactersManager.addCharacter(@m_npcFollower);
+		//m_charactersManager.addCharacter(@m_npcFollower);
 	}
 
 	void onUpdate() override

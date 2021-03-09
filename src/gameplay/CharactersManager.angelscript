@@ -15,4 +15,9 @@ class CharactersManager
 			m_character[i].update();
 		}
 	}
+
+	Character@[] getCharactersManager()
+	{
+		return m_character;
+	}
 }

@@ -380,6 +380,13 @@
                 <CustomData />
             </Entity>
         </Entity>
+        <Entity id="275" spriteFrame="0">
+            <EntityName>spawner.ent</EntityName>
+            <Position x="1488" y="384" z="0" angle="0" />
+            <Entity shape="0" applyLight="0" castShadow="0" type="0" static="1" blendMode="0">
+                <CustomData />
+            </Entity>
+        </Entity>
         <Entity id="198" spriteFrame="0">
             <EntityName>cam_max.ent</EntityName>
             <Position x="1924" y="474" z="0" angle="0" />

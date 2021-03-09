@@ -25,24 +25,12 @@ class CharacterCameraController : CameraController
 		camMin = m_camMin.GetPositionXY();
 		camMax = m_camMax.GetPositionX() - GetScreenSize().x;
 		
-		
 		//limiting the camera
-		SetCameraPos(clamp(camPos, camMin, camMax + vector2(15, 0)));		
+		SetCameraPos(utils::clamp(camPos, camMin, camMax + vector2(15, 0)));		
 	} 
 
 	vector2 getCameraMiddlePos() override
 	{
 		return m_cameraMiddlePos;
 	}
-	
-	float clamp(const float val, const float minVal, const float maxVal)
-	{
-		return (val < minVal) ? minVal : ((val > maxVal) ? maxVal : val);
-	}
-	
-	vector2 clamp(const vector2 val, const vector2 minVal, const vector2 maxVal)
-	{
-		return vector2(clamp(val.x, minVal.x, maxVal.x), clamp(val.y, minVal.y, maxVal.y));
-	}
-	
 }
