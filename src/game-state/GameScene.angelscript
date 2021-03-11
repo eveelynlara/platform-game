@@ -33,6 +33,11 @@
 		return @m_charactersManager;
 	}
 
+	Character@ getMainCharacter()
+	{
+		return @m_character;
+	}
+
 	void onUpdate() override
 	{
 		m_charactersManager.update();
