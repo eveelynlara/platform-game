@@ -1,6 +1,7 @@
 class CharacterCameraController : CameraController
 {
 	private vector2 m_cameraMiddlePos;
+	private vector2 m_cameraPos;
 	private Character@ m_character;
 	private ETHEntity@ m_camMin;
 	private ETHEntity@ m_camMax;
@@ -26,7 +27,8 @@ class CharacterCameraController : CameraController
 		camMax = m_camMax.GetPositionXY() - GetScreenSize();
 		
 		//limiting the camera
-		SetCameraPos(utils::clamp(camPos, camMin, camMax));		
+		m_cameraPos = utils::clamp(camPos, camMin, camMax);
+		SetCameraPos(m_cameraPos);		
 	} 
 
 	vector2 getCameraMiddlePos() override

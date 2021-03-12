@@ -1,4 +1,4 @@
-﻿class GameScene : Scene
+class GameScene : Scene
 {
 	private Button@ m_exitButton;
 	
@@ -6,6 +6,8 @@
 	
 	private CharactersManager m_charactersManager;
 	private CameraController@ m_cameraController;
+
+	private MoveBackground@ m_background;
 	
 	GameScene()
 	{
@@ -19,7 +21,7 @@
 
 		const vector2 screenMiddle(GetScreenSize() * 0.5f);
 
-		AddEntity("background.ent", vector3(screenMiddle, -10.0f));
+		@m_background = MoveBackground("background.ent", screenMiddle);
 
 		@m_character = Character("witch.ent", screenMiddle);
 		m_character.setController(MainCharacterController());
@@ -42,6 +44,7 @@
 	{
 		m_charactersManager.update();
 		m_cameraController.update();
+		m_background.update();
 
 		m_exitButton.putButton();
 		if (m_exitButton.isPressed())

@@ -18,6 +18,7 @@
 #include "src/gameplay/CameraController.angelscript"
 #include "src/gameplay/CharacterCameraController.angelscript"
 #include "src/gameplay/CharactersManager.angelscript"
+#include "src/gameplay/MoveBackground.angelscript"
 #include "src/gameplay/StaticCameraController.angelscript"
 #include "src/gameplay/Spawner.angelscript"
 
