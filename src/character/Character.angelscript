@@ -147,3 +147,17 @@ void ETHPreSolveContactCallback_Character(
 		body.SetUInt("touchingGroundTime", GetTime());
 	}
 }
+
+void ETHBeginContactCallback_Character(
+	ETHEntity@ thisEntity,
+	ETHEntity@ other,
+	vector2 contactPointA,
+	vector2 contactPointB,
+	vector2 contactNormal)
+{
+	if (other.GetEntityName() == "barrier.ent")
+	{
+	    thisEntity.SetUInt("reached_barrier", 1 /*true*/);
+	    print("Touched " + thisEntity.GetEntityName());
+	}
+}

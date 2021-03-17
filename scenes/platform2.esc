@@ -1,0 +1,1770 @@
+<?xml version="1.0" ?>
+<Ethanon>
+    <SceneProperties lightIntensity="2" parallaxIntensity="5">
+        <Ambient r="1" g="1" b="1" />
+        <ZAxisDirection x="0" y="0" />
+    </SceneProperties>
+    <EntitiesInScene>
+        <Entity id="650" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="64" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="651" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="192" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="652" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="320" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="653" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="448" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="654" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="576" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="659" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="704" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="660" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="832" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="661" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="960" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="662" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="1088" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="663" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="1216" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="664" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="1344" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="665" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="1472" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="666" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="1600" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="667" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="1728" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="668" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="1856" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="669" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="1984" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="670" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="2112" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="671" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="2240" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="672" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="2368" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="673" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="2496" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="674" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="2624" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="675" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="2752" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="676" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="2880" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="677" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="3008" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="678" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="3136" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="679" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="3264" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="680" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="3392" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="681" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="3520" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="682" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="3648" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="683" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="3776" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="684" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="3904" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="686" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="4032" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="687" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="4160" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="688" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="4288" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="689" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="4416" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="690" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="4544" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="691" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="4672" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="692" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="4800" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="693" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="4928" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="694" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="5056" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="695" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="5184" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="696" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="5312" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="697" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="5440" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="698" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="5568" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="700" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="5696" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="701" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="5824" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="702" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="5952" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="703" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="6080" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="704" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="6208" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="705" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="6336" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="706" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="6464" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="707" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="6592" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="708" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="6720" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="709" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="6848" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="710" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="6976" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="711" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="7104" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="130" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="-64" y="-64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="410" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="100" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="197" spriteFrame="0">
+            <EntityName>cam_min.ent</EntityName>
+            <Position x="0" y="0" z="0" angle="0" />
+            <Entity shape="0" applyLight="0" castShadow="0" type="0" static="1" blendMode="0">
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="293" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="96" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="294" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="288" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="295" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="480" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="362" spriteFrame="0">
+            <EntityName>tile.ent</EntityName>
+            <Position x="32" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="395" spriteFrame="0">
+            <EntityName>tile.ent</EntityName>
+            <Position x="256" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="425" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="96" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="426" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="96" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="427" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="96" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="428" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="96" y="352" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="429" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="96" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="430" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="96" y="288" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="437" spriteFrame="0">
+            <EntityName>tile.ent</EntityName>
+            <Position x="192" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="438" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="183" y="357" z="-2" angle="-90" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="439" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="183" y="322" z="-2" angle="-90" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="440" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="96" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="444" spriteFrame="0">
+            <EntityName>tile.ent</EntityName>
+            <Position x="32" y="224" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="445" spriteFrame="0">
+            <EntityName>tile.ent</EntityName>
+            <Position x="64" y="192" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="446" spriteFrame="0">
+            <EntityName>tile.ent</EntityName>
+            <Position x="32" y="192" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="447" spriteFrame="0">
+            <EntityName>tile.ent</EntityName>
+            <Position x="8" y="160" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="448" spriteFrame="0">
+            <EntityName>single_piece.ent</EntityName>
+            <Position x="28" y="128" z="0" angle="0" />
+            <Entity>
+                <FileName>single_piece.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="449" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="86" y="258" z="-2" angle="-90" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="450" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="52" y="194" z="-2" angle="-90" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="296" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="672" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="297" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="864" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="473" spriteFrame="0">
+            <EntityName>transition_tile.ent</EntityName>
+            <Position x="736" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>transition_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="409" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="1460" y="448" z="2" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="298" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="1056" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="301" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="1358" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="303" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="1522" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="404" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="1358" y="450" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="406" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="1240" y="478" z="2" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="411" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="1472" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="472" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="1184" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="408" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="1558" y="420" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="304" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="1632" y="480" z="2" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="451" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="1826" y="482" z="0" angle="-90" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="453" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2006" y="480" z="0" angle="90" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="456" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="1744" y="480" z="2" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="873" spriteFrame="0">
+            <EntityName>spawner.ent</EntityName>
+            <Position x="1536" y="368" z="0" angle="0" />
+            <Entity shape="0" applyLight="0" castShadow="0" type="0" static="1" blendMode="0">
+                <CustomData>
+                    <Variable>
+                        <Type>string</Type>
+                        <Name>controller</Name>
+                        <Value>flameDragon</Value>
+                    </Variable>
+                </CustomData>
+            </Entity>
+        </Entity>
+        <Entity id="1345" spriteFrame="0">
+            <EntityName>barrier.ent</EntityName>
+            <Position x="1976.5" y="404.5" z="0" angle="0" />
+            <Entity>
+                <FileName>barrier.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="454" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="2092" y="480" z="2" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="458" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2176" y="480" z="0" angle="-90" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="460" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2344" y="480" z="0" angle="90" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="464" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2516" y="480" z="0" angle="-90" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="468" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2368" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="469" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2432" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="471" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2496" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="994" spriteFrame="0">
+            <EntityName>spawner.ent</EntityName>
+            <Position x="2160" y="400" z="0" angle="0" />
+            <Entity shape="0" applyLight="0" castShadow="0" type="0" static="1" blendMode="0">
+                <CustomData>
+                    <Variable>
+                        <Type>string</Type>
+                        <Name>controller</Name>
+                        <Value>dummyDragon</Value>
+                    </Variable>
+                </CustomData>
+            </Entity>
+        </Entity>
+        <Entity id="475" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2704" y="480" z="0" angle="90" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="476" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="2784" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="477" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="2976" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="479" spriteFrame="4">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2880" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="480" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2944" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="481" spriteFrame="4">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3008" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="482" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3040" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="483" spriteFrame="0">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2880" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="484" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2912" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="485" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2976" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="486" spriteFrame="4">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3008" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="487" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3040" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="488" spriteFrame="4">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2880" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="489" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2944" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="490" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3008" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="491" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3040" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="492" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2848" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="494" spriteFrame="4">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2944" y="352" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="495" spriteFrame="4">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3008" y="352" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="496" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3040" y="352" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="497" spriteFrame="4">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2912" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="498" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2976" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="500" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2976" y="288" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="501" spriteFrame="5">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2944" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="502" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="2976" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="504" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3040" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="505" spriteFrame="4">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3040" y="288" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="506" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3040" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="507" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3264" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="508" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3264" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="509" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3264" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="514" spriteFrame="0">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3264" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="515" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3328" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="516" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3360" y="288" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="517" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3392" y="326" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="518" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3456" y="326" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="533" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3264" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="534" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3264" y="352" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="535" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3264" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="536" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3264" y="288" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="537" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3264" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="539" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3328" y="352" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="543" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3328" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="544" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3328" y="288" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="550" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="3360" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="551" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="3360" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="552" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="3360" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="553" spriteFrame="1">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="3360" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="567" spriteFrame="2">
+            <EntityName>transition_tile.ent</EntityName>
+            <Position x="3488" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>transition_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="568" spriteFrame="2">
+            <EntityName>transition_tile.ent</EntityName>
+            <Position x="3488" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>transition_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="569" spriteFrame="2">
+            <EntityName>transition_tile.ent</EntityName>
+            <Position x="3488" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>transition_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="570" spriteFrame="2">
+            <EntityName>transition_tile.ent</EntityName>
+            <Position x="3488" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>transition_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="571" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3552" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="572" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3552" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="573" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3552" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="574" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3552" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="596" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="4000" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="597" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="4000" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="598" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="4000" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="775" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="776" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="777" spriteFrame="7">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="778" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="779" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="352" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="780" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="781" spriteFrame="4">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="288" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="782" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="783" spriteFrame="5">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="224" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="784" spriteFrame="3">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="192" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="785" spriteFrame="5">
+            <EntityName>tile.ent</EntityName>
+            <Position x="3744" y="160" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="599" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="4224" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="600" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="4224" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="602" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="4224" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="603" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="4224" y="384" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="604" spriteFrame="7">
+            <EntityName>tile.ent</EntityName>
+            <Position x="4224" y="352" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="605" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="4224" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="648" spriteFrame="2">
+            <EntityName>single_piece.ent</EntityName>
+            <Position x="4646" y="288" z="0" angle="0" />
+            <Entity>
+                <FileName>single_piece.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="649" spriteFrame="2">
+            <EntityName>single_piece.ent</EntityName>
+            <Position x="4810" y="192" z="0" angle="0" />
+            <Entity>
+                <FileName>single_piece.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="624" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5570" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="610" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5190" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="611" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5280" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="612" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5472" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="621" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5280" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="622" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5472" y="256" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="720" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5188" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="722" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5376" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="724" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5568" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="627" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="5888" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="628" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="5952" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="629" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="6144" y="192" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="630" spriteFrame="6">
+            <EntityName>tile.ent</EntityName>
+            <Position x="6208" y="192" z="0" angle="0" />
+            <Entity>
+                <FileName>tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="737" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="6700" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="738" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="6700" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="739" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="6700" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="639" spriteFrame="0">
+            <EntityName>cam_max.ent</EntityName>
+            <Position x="7040" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>cam_max.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="712" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="7104" y="64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="713" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="7104" y="192" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="714" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="7104" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="745" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="6816" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="746" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="6816" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="747" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="6816" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="748" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="7008" y="480" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="749" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="7008" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="750" spriteFrame="0">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="7008" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="751" spriteFrame="4">
+            <EntityName>transition_tile.ent</EntityName>
+            <Position x="6944" y="416" z="0" angle="0" />
+            <Entity>
+                <FileName>transition_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="131" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="-64" y="64" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="132" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="-64" y="192" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="133" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="-64" y="320" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="134" spriteFrame="0">
+            <EntityName>collision_box_128x.ent</EntityName>
+            <Position x="-64" y="448" z="0" angle="0" />
+            <Entity>
+                <FileName>collision_box_128x.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="719" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5188" y="512" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="721" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5380" y="512" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+        <Entity id="723" spriteFrame="2">
+            <EntityName>wide_tile.ent</EntityName>
+            <Position x="5568" y="512" z="0" angle="0" />
+            <Entity>
+                <FileName>wide_tile.ent</FileName>
+                <CustomData />
+            </Entity>
+        </Entity>
+    </EntitiesInScene>
+</Ethanon>

@@ -7,11 +7,11 @@ class GameScene : Scene
 	private CharactersManager m_charactersManager;
 	private CameraController@ m_cameraController;
 
-	private MoveBackground@ m_background;
+	private BackgroundManager@ m_background;
 	
 	GameScene()
 	{
-		const string sceneName = "scenes/platforms.esc";
+		const string sceneName = "scenes/platform2.esc";
 		super(sceneName);
 	}
 
@@ -21,7 +21,7 @@ class GameScene : Scene
 
 		const vector2 screenMiddle(GetScreenSize() * 0.5f);
 
-		@m_background = MoveBackground("background.ent", screenMiddle);
+		@m_background = BackgroundManager("background.ent", screenMiddle);
 
 		@m_character = Character("witch.ent", screenMiddle);
 		m_character.setController(MainCharacterController());

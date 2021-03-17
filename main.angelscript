@@ -14,6 +14,7 @@
 #include "src/character/DummyController.angelscript"
 #include "src/character/MainCharacterController.angelscript"
 #include "src/character/NPCFollowPlayerController.angelscript"
+#include "src/character/NPCPatrolController.angelscript"
 
 #include "src/gameplay/CameraController.angelscript"
 #include "src/gameplay/CharacterCameraController.angelscript"

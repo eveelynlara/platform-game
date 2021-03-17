@@ -30,10 +30,10 @@
 
 		// find current move direction based on character's movement
 		if (m_followedCharacterPos.x > m_npcCharacterPos.x + 70.f)
-			m_movementSpeed = npcSpeed;
+			m_movementSpeed = npcSpeed * 0.8f;
 			
 		if (m_followedCharacterPos.x < m_npcCharacterPos.x - 70.f)
-			m_movementSpeed = -npcSpeed;
+			m_movementSpeed = -npcSpeed * 0.8f;
 	}
 
 	float getMovementSpeed() const

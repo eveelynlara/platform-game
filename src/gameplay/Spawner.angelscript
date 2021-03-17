@@ -9,11 +9,24 @@ void ETHCallback_spawner(ETHEntity@ thisEntity)
 
 	if (utils::isWorldSpacePointInScreenWithTolerance(thisEntity.GetPositionXY(), vector2(128.0f, 64.0f)))
     {      
-    	Character@ npcFollower = Character("flameDragon.ent", thisEntity.GetPositionXY());
-		CharactersManager@ charactersManager = myGameScene.getCharactersManager();
-		charactersManager.addCharacter(@npcFollower);
-		npcFollower.setController(NPCFollowPlayerController(myGameScene.getMainCharacter()));
+    	Character@ npc;
+		const string controllerType = thisEntity.GetString("controller");
+		CharacterController@ controller;
 
-        DeleteEntity(thisEntity);
+		if (controllerType == "flameDragon")
+		{
+		    @npc = Character("flameDragon.ent", thisEntity.GetPositionXY());
+		    npc.setController(NPCFollowPlayerController(myGameScene.getMainCharacter()));
+		}
+		else if(controllerType == "dummyDragon")
+		{
+			@npc = Character("flameDragon.ent", thisEntity.GetPositionXY());
+			npc.setController(NPCPatrolController());
+		}
+
+		CharactersManager@ charactersManager = myGameScene.getCharactersManager();
+		charactersManager.addCharacter(@npc);
+
+		DeleteEntity(thisEntity);
     }
 }
