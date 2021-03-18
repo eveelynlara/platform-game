@@ -59,6 +59,12 @@
 		return m_entity.GetPositionY();
 	}
 	
+	ETHEntity@ getEntity()
+	{
+		return @m_entity;
+	}
+
+	
 	private void updateMovement(ETHPhysicsController@ physicsController, const float movementSpeed)
 	{
 		// if there's movement, update animation
@@ -157,7 +163,15 @@ void ETHBeginContactCallback_Character(
 {
 	if (other.GetEntityName() == "barrier.ent")
 	{
-	    thisEntity.SetUInt("reached_barrier", 1 /*true*/);
-	    print("Touched " + thisEntity.GetEntityName());
+		if(thisEntity.GetUInt("reached_barrier") == 0)
+		{
+	    	thisEntity.SetUInt("reached_barrier", 1 /*true*/);
+	    	print("Touched " + thisEntity.GetEntityName());
+	    }
+	    else
+	    {
+	    	thisEntity.SetUInt("reached_barrier", 0 /*true*/);
+	    }
 	}
 }
+

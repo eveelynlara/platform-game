@@ -13,10 +13,13 @@
 	void update(Character@ thisCharacter) override
 	{
 		m_movementSpeed = 0.0f;
-		const float npcSpeed = 4.0f;
+		const float npcSpeed = 3.0f;
 		m_movementSpeed = -npcSpeed * 0.8f;
 
-		//print(thisCharacter.m_entity.GetUInt("reached_barrier"));
+		if(thisCharacter.getEntity().GetUInt("reached_barrier") == 1)
+		{
+			m_movementSpeed *= -1;
+		}
 	}
 
 	float getMovementSpeed() const
