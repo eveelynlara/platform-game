@@ -31,4 +31,9 @@
 	{
 		return m_jumpImpulse;
 	}	
+
+	FireballsManager@ getFireballsManager()
+	{
+		return null;
+	}
 }

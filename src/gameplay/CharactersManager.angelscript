@@ -1,7 +1,6 @@
 class CharactersManager
 {
 	private Character@[] m_character;
-	private CharacterController@ characterController;
 	
 	void addCharacter(Character@ newCharacter)
 	{

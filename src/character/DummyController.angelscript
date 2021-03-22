@@ -13,4 +13,9 @@
 	{
 		return 0.0f;
 	}
+
+	FireballsManager@ getFireballsManager()
+	{
+		return null;
+	}
 }

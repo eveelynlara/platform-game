@@ -1,6 +1,6 @@
 ﻿class Character
 {
-	ETHEntity@ m_entity;
+	private ETHEntity@ m_entity;
 
 	private FrameTimer m_frameTimer;
 	private uint m_directionLine = 1;
@@ -8,6 +8,7 @@
 	private bool m_touchingGround = false;
 	private int m_jumpInTheAirCount = 0;
 	private int m_maxJumpsInTheAir = 10;
+	private float m_movementSpeed;
 	private CharacterController@ m_characterController = DummyController();
 	
 	Character(const string &in entityName, const vector2 pos)
@@ -39,6 +40,11 @@
 		m_entity.SetFrame(m_frameColumn, m_directionLine);
 	}
 
+	CharacterController@ getCharacterController()
+	{
+		return @m_characterController;
+	}
+
 	bool isTouchingGround() const
 	{
 		return m_touchingGround;
@@ -58,7 +64,7 @@
 	{
 		return m_entity.GetPositionY();
 	}
-	
+
 	ETHEntity@ getEntity()
 	{
 		return @m_entity;
@@ -67,6 +73,7 @@
 	
 	private void updateMovement(ETHPhysicsController@ physicsController, const float movementSpeed)
 	{
+		m_movementSpeed = movementSpeed;
 		// if there's movement, update animation
 		if (movementSpeed != 0.0f)
 		{
@@ -89,6 +96,11 @@
 			// idle animation frame (first column in sprite sheet)
 			m_frameColumn = 0;
 		}
+	}
+
+	float getCharacterMovementSpeed()
+	{
+		return m_movementSpeed;
 	}
 
 	private void updateJumpImpulse(ETHPhysicsController@ physicsController, const float jumpImpulse)
@@ -166,7 +178,6 @@ void ETHBeginContactCallback_Character(
 		if(thisEntity.GetUInt("reached_barrier") == 0)
 		{
 	    	thisEntity.SetUInt("reached_barrier", 1 /*true*/);
-	    	print("Touched " + thisEntity.GetEntityName());
 	    }
 	    else
 	    {

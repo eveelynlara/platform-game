@@ -15,10 +15,12 @@
 #include "src/character/MainCharacterController.angelscript"
 #include "src/character/NPCFollowPlayerController.angelscript"
 #include "src/character/NPCPatrolController.angelscript"
+#include "src/character/Fireball.angelscript"
 
 #include "src/gameplay/CameraController.angelscript"
 #include "src/gameplay/CharacterCameraController.angelscript"
 #include "src/gameplay/CharactersManager.angelscript"
+#include "src/gameplay/FireballsManager.angelscript"
 #include "src/gameplay/MoveBackground.angelscript"
 #include "src/gameplay/StaticCameraController.angelscript"
 #include "src/gameplay/Spawner.angelscript"
