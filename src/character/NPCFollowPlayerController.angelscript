@@ -18,6 +18,7 @@
 
 	void update(Character@ thisCharacter) override
 	{
+		ETHInput@ input = GetInputHandle();
 		m_followedCharacterPos = m_character.getPosition();
 		m_npcCharacterPos = thisCharacter.getPosition();
 
@@ -46,8 +47,8 @@
 		return m_jumpImpulse;
 	}	
 
-	FireballsManager@ getFireballsManager()
+	KEY_STATE fireState() const
 	{
-		return null;
+		return KS_UP;
 	}
 }

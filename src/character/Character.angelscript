@@ -3,13 +3,16 @@
 	private ETHEntity@ m_entity;
 
 	private FrameTimer m_frameTimer;
-	private uint m_directionLine = 1;
+	private uint m_directionLine = 2;
 	private uint m_frameColumn = 0;
 	private bool m_touchingGround = false;
 	private int m_jumpInTheAirCount = 0;
 	private int m_maxJumpsInTheAir = 10;
 	private float m_movementSpeed;
+
 	private CharacterController@ m_characterController = DummyController();
+	private Fireball@ fireball;
+	private FireballsManager m_fireballsManager;
 	
 	Character(const string &in entityName, const vector2 pos)
 	{
@@ -26,6 +29,7 @@
 	void update()
 	{
 		m_characterController.update(@this);
+		m_fireballsManager.update();
 	
 		ETHPhysicsController@ physicsController = m_entity.GetPhysicsController();
 
@@ -38,6 +42,12 @@
 
 		// update entity animation frame
 		m_entity.SetFrame(m_frameColumn, m_directionLine);
+
+		if (m_characterController.fireState() == KS_HIT)
+		{
+			@fireball = Fireball("fireball.ent", m_entity.GetPositionXY(), m_directionLine);
+			m_fireballsManager.addFireball(@fireball);
+		}
 	}
 
 	CharacterController@ getCharacterController()
@@ -70,13 +80,14 @@
 		return @m_entity;
 	}
 
-	
 	private void updateMovement(ETHPhysicsController@ physicsController, const float movementSpeed)
 	{
 		m_movementSpeed = movementSpeed;
+
 		// if there's movement, update animation
 		if (movementSpeed != 0.0f)
 		{
+			
 			// apply movement horizontally, keeping current vertical velocity (let gravity work alone)
 			const vector2 currentVelocity = physicsController.GetLinearVelocity();
 			physicsController.SetLinearVelocity(vector2(movementSpeed, currentVelocity.y));

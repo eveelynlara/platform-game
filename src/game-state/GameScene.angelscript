@@ -6,7 +6,6 @@ class GameScene : Scene
 	
 	private CharactersManager m_charactersManager;
 	private CameraController@ m_cameraController;
-	private FireballsManager@ fireballsManager;
 
 	private BackgroundManager@ m_background;
 	
@@ -29,8 +28,6 @@ class GameScene : Scene
 		
 		@m_cameraController = CharacterCameraController(@m_character);
 		m_charactersManager.addCharacter(@m_character);
-
-		@fireballsManager = m_character.getCharacterController().getFireballsManager();
 	}
 
 	CharactersManager@ getCharactersManager()
@@ -48,7 +45,6 @@ class GameScene : Scene
 		m_charactersManager.update();
 		m_cameraController.update();
 		m_background.update();
-		fireballsManager.update();
 
 		m_exitButton.putButton();
 		if (m_exitButton.isPressed())

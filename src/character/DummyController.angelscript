@@ -2,6 +2,7 @@
 {
 	void update(Character@ thisCharacter) override
 	{
+		ETHInput@ input = GetInputHandle();
 	}
 
 	float getMovementSpeed() const override
@@ -14,8 +15,8 @@
 		return 0.0f;
 	}
 
-	FireballsManager@ getFireballsManager()
+	KEY_STATE fireState() const
 	{
-		return null;
+		return KS_UP;
 	}
 }
