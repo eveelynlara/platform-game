@@ -45,7 +45,7 @@
 
 		if (m_characterController.fireState() == KS_HIT)
 		{
-			@fireball = Fireball("fireball.ent", m_entity.GetPositionXY(), m_directionLine);
+			@fireball = Fireball("fireball.ent", m_entity.GetPositionXY(), physicsController.GetLinearVelocity().x, m_directionLine);
 			m_fireballsManager.addFireball(@fireball);
 		}
 	}

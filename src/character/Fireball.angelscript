@@ -4,7 +4,7 @@ class Fireball
 	private FrameTimer m_frameTimer;
 	private uint m_frameColumn = 0;
 
-	Fireball(const string &in entityName, vector2 pos, float directionLine)
+	Fireball(const string &in entityName, vector2 pos, float caracterVelocityX, float directionLine)
 	{	
 		if(directionLine == 2)
 		{
@@ -17,9 +17,9 @@ class Fireball
 
 		AddEntity(entityName, vector3(pos.x + directionLine, pos.y, -2.0f), 0.0f /*rotation*/, m_entity, "Fireball", 1.0f /*scale*/);
 
-		//initail speed of the fireball	
+		//initial speed of the fireball	
 		ETHPhysicsController@ physicsControllerBall = m_entity.GetPhysicsController();
-		physicsControllerBall.SetLinearVelocity(vector2(5.0f, physicsControllerBall.GetLinearVelocity().y));
+		physicsControllerBall.SetLinearVelocity(vector2(caracterVelocityX + directionLine, physicsControllerBall.GetLinearVelocity().y));
 	}
 
 	void update()
