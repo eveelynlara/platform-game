@@ -4,22 +4,15 @@ class Fireball
 	private FrameTimer m_frameTimer;
 	private uint m_frameColumn = 0;
 
-	Fireball(const string &in entityName, vector2 pos, float caracterVelocityX, float directionLine)
+	Fireball(const string &in entityName, const vector2 &in originPos, const float &in directionLineX, const float speed = 5.0f)
 	{	
-		if(directionLine == 2)
-		{
-			directionLine = 5;
-		}
-		else if(directionLine == 1)
-		{
-			directionLine = -5;
-		}
-
-		AddEntity(entityName, vector3(pos.x + directionLine, pos.y, -2.0f), 0.0f /*rotation*/, m_entity, "Fireball", 1.0f /*scale*/);
+		//print(directionLineX);
+		AddEntity(entityName, vector3(originPos.x + (directionLineX * 24.0f), originPos.y, -2.0f), 0.0f /*rotation*/, m_entity, "Fireball", 1.0f /*scale*/);
 
 		//initial speed of the fireball	
 		ETHPhysicsController@ physicsControllerBall = m_entity.GetPhysicsController();
-		physicsControllerBall.SetLinearVelocity(vector2(caracterVelocityX + directionLine, physicsControllerBall.GetLinearVelocity().y));
+		physicsControllerBall.SetLinearVelocity(vector2(directionLineX * speed, physicsControllerBall.GetLinearVelocity().y));
+
 	}
 
 	void update()
@@ -35,27 +28,49 @@ class Fireball
 	}
 }
 
-void ETHBeginContactCallback_Fireball(
+/*void ETHBeginContactCallback_Fireball(
 	ETHEntity@ thisEntity,
 	ETHEntity@ other,
 	vector2 contactPointA,
 	vector2 contactPointB,
 	vector2 contactNormal)
 {
-	if (other.GetEntityName() == "wide_tile.ent" || other.GetEntityName() == "tile.ent" || other.GetEntityName() == "single_piece.ent")
+	if (other.GetEntityName() != "Character")
 	{
-		if(utils::dot(contactNormal, vector2(1,0)) > abs(0.5f))
+		float isVertical = utils::dot(contactNormal, vector2(1,0));
+		if(abs(isVertical) > 0.1)
 		{
 			thisEntity.SetUInt("touchedVertical", 1);
 		}
-		//print(utils::dot(contactNormal, vector2(1,0)));
+	}
+	else
+	{
+		print(other.GetInt("team", -1));
+	}
+}
+
+void ETHPreSolveContactCallback_fireball(
+	ETHEntity@ thisEntity,
+	ETHEntity@ other,
+	vector2 contactPointA,
+	vector2 contactPointB,
+	vector2 contactNormal)
+{
+	if (thisEntity.GetInt("team") == other.GetInt("team", -1))
+	{
+		DisableContact();
+	}
+	/*else
+	{
+		aplicaDano();
 	}
 }
 
 void ETHCallback_Fireball(ETHEntity@ thisEntity)
 {
-	/*if(thisEntity.GetUInt("touchedVertical") == 1)
+	if(thisEntity.GetUInt("touchedVertical") != 0)
 	{
 		DeleteEntity(thisEntity);
-	}*/
+	}
 }
+*/

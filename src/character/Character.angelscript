@@ -4,6 +4,7 @@
 
 	private FrameTimer m_frameTimer;
 	private uint m_directionLine = 2;
+	private float m_directionLineX = 1;
 	private uint m_frameColumn = 0;
 	private bool m_touchingGround = false;
 	private int m_jumpInTheAirCount = 0;
@@ -45,7 +46,7 @@
 
 		if (m_characterController.fireState() == KS_HIT)
 		{
-			@fireball = Fireball("fireball.ent", m_entity.GetPositionXY(), physicsController.GetLinearVelocity().x, m_directionLine);
+			@fireball = Fireball("fireball.ent", m_entity.GetPositionXY(), physicsController.GetLinearVelocity().x, m_directionLineX);
 			m_fireballsManager.addFireball(@fireball);
 		}
 	}
@@ -97,6 +98,9 @@
 
 			// find correct row in sprite sheet depending on direction
 			m_directionLine = movementSpeed > 0 ? 2 : 1;
+
+			// find the side the character are facing
+			m_directionLineX = (m_directionLine == 2) ? 1 : -1;
 		}
 		else
 		{
