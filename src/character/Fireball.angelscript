@@ -4,15 +4,13 @@ class Fireball
 	private FrameTimer m_frameTimer;
 	private uint m_frameColumn = 0;
 
-	Fireball(const string &in entityName, const vector2 &in originPos, const float &in directionLineX, const float speed = 5.0f)
+	Fireball(const string &in entityName, const vector2 &in originPos, const float lastDirectionX, const float speed = 10.0f)
 	{	
-		//print(directionLineX);
-		AddEntity(entityName, vector3(originPos.x + (directionLineX * 24.0f), originPos.y, -2.0f), 0.0f /*rotation*/, m_entity, "Fireball", 1.0f /*scale*/);
+		AddEntity(entityName, vector3(originPos.x + (lastDirectionX * 24.0f), originPos.y, -2.0f), 0.0f /*rotation*/, m_entity, "Fireball", 1.0f /*scale*/);
 
 		//initial speed of the fireball	
 		ETHPhysicsController@ physicsControllerBall = m_entity.GetPhysicsController();
-		physicsControllerBall.SetLinearVelocity(vector2(directionLineX * speed, physicsControllerBall.GetLinearVelocity().y));
-
+		physicsControllerBall.SetLinearVelocity(vector2(lastDirectionX * speed, physicsControllerBall.GetLinearVelocity().y));
 	}
 
 	void update()
@@ -28,7 +26,26 @@ class Fireball
 	}
 }
 
-/*void ETHBeginContactCallback_Fireball(
+bool applyDamage(ETHEntity@ damagedEntity, const int team, const int damage)
+{
+	if(damagedEntity.CheckCustomData("hp") == DT_INT)
+	{
+		if(damagedEntity.GetInt("team") != team)
+		{
+			damagedEntity.AddToInt("hp", -damage);
+
+			#if TESTING
+				print(damagedEntity.GetInt("hp"));
+				//print(damagedEntity.GetEntityName());
+			#endif
+
+			return true;
+		}
+	}
+	return false;
+}
+
+void ETHBeginContactCallback_Fireball(
 	ETHEntity@ thisEntity,
 	ETHEntity@ other,
 	vector2 contactPointA,
@@ -43,9 +60,10 @@ class Fireball
 			thisEntity.SetUInt("touchedVertical", 1);
 		}
 	}
-	else
+
+	if(applyDamage(other, thisEntity.GetInt("team"), thisEntity.GetInt("damage", 10)))
 	{
-		print(other.GetInt("team", -1));
+		thisEntity.SetUInt("dead", 1);
 	}
 }
 
@@ -60,10 +78,6 @@ void ETHPreSolveContactCallback_fireball(
 	{
 		DisableContact();
 	}
-	/*else
-	{
-		aplicaDano();
-	}
 }
 
 void ETHCallback_Fireball(ETHEntity@ thisEntity)
@@ -72,5 +86,9 @@ void ETHCallback_Fireball(ETHEntity@ thisEntity)
 	{
 		DeleteEntity(thisEntity);
 	}
+
+	else if(thisEntity.GetUInt("dead") != 0)
+	{
+		DeleteEntity(thisEntity);
+	}
 }
-*/

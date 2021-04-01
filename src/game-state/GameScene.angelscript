@@ -25,7 +25,7 @@ class GameScene : Scene
 
 		@m_character = Character("witch.ent", screenMiddle);
 		m_character.setController(MainCharacterController());
-		
+
 		@m_cameraController = CharacterCameraController(@m_character);
 		m_charactersManager.addCharacter(@m_character);
 	}
