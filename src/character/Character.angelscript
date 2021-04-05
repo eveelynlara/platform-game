@@ -201,16 +201,12 @@ void ETHBeginContactCallback_Character(
 	}
 }
 
-void ETHCallback_Character(ETHEntity@ thisEntity)
+void ETHCallback_Character(ETHEntity@ thisEntity, ETHEntity@ other)
 {
-	/*if(thisEntity.GetUInt("hp") <= 0)
+	if(thisEntity.GetInt("hp") <= 0)
 	{
-		#if TESTING
-			print("EntrouNoIf");
-			//print(damagedEntity.GetEntityName());
-		#endif
 		DeleteEntity(thisEntity);
-	}*/
+	}
 }
 
 
