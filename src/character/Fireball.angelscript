@@ -84,11 +84,19 @@ void ETHCallback_Fireball(ETHEntity@ thisEntity)
 {
 	if(thisEntity.GetUInt("touchedVertical") != 0)
 	{
+		PlaySample("soundfx/ball_touching_vertical.wav");
 		DeleteEntity(thisEntity);
 	}
 
 	else if(thisEntity.GetUInt("dead") != 0)
 	{
+		PlaySample("soundfx/touchedSup.wav");
 		DeleteEntity(thisEntity);
 	}
+}
+
+void ETHConstructorCallback_Fireball(ETHEntity@ thisEntity)
+{
+	LoadSoundEffect("soundfx/touchedSup.wav");
+	LoadSoundEffect("soundfx/ball_touching_vertical.wav");
 }
