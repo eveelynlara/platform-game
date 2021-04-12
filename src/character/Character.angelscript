@@ -1,4 +1,4 @@
-﻿class Character
+class Character
 {
 	private ETHEntity@ m_entity;
 
@@ -48,6 +48,11 @@
 		{
 			@fireball = Fireball("fireball.ent", m_entity.GetPositionXY(), m_lastDirectionX);
 			m_fireballsManager.addFireball(@fireball);
+
+			PlaySample("soundfx/explosion_small.mp3");
+		#if TESTING
+			print("KS_HIT");
+		#endif
 		}
 	}
 
@@ -207,6 +212,11 @@ void ETHCallback_Character(ETHEntity@ thisEntity, ETHEntity@ other)
 	{
 		DeleteEntity(thisEntity);
 	}
+}
+
+void ETHConstructorCallback_Character(ETHEntity@ thisEntity)
+{
+	LoadSoundEffect("soundfx/explosion_small.mp3");
 }
 
 

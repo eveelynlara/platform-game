@@ -67,7 +67,7 @@ void ETHBeginContactCallback_Fireball(
 	}
 }
 
-void ETHPreSolveContactCallback_fireball(
+void ETHPreSolveContactCallback_Fireball(
 	ETHEntity@ thisEntity,
 	ETHEntity@ other,
 	vector2 contactPointA,
