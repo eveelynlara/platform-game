@@ -18,14 +18,14 @@ void ETHCallback_spawner(ETHEntity@ thisEntity)
 		    @npc = Character("flameDragon.ent", thisEntity.GetPositionXY());
 		    npc.setController(NPCFollowPlayerController(myGameScene.getMainCharacter()));
 		    npc.getEntity().SetInt("team", 2);
-		    npc.getEntity().SetInt("hp", 100);
+		    npc.getEntity().SetInt("hp", 30);
 		}
 		else if(controllerType == "dummyDragon")
 		{
 			@npc = Character("flameDragon.ent", thisEntity.GetPositionXY());
 			npc.setController(NPCPatrolController());
 			npc.getEntity().SetInt("team", 2);
-		    npc.getEntity().SetInt("hp", 100);
+		    npc.getEntity().SetInt("hp", 30);
 		}
 
 		CharactersManager@ charactersManager = myGameScene.getCharactersManager();
