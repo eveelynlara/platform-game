@@ -50,9 +50,6 @@ class Character
 			m_fireballsManager.addFireball(@fireball);
 
 			PlaySample("soundfx/explosion_small.mp3");
-		#if TESTING
-			print("KS_HIT");
-		#endif
 		}
 	}
 
