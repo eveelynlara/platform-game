@@ -23,6 +23,11 @@
 		}
 	}
 
+	float getDirectionChangeRequest() const override
+	{
+		return 0.0f;
+	}
+
 	float getMovementSpeed() const
 	{
 		return m_movementSpeed;

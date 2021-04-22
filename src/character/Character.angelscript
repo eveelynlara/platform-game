@@ -58,6 +58,11 @@ class Character
 		return @m_characterController;
 	}
 
+	bool isPointingAt(const vector2 &in p) const
+	{
+		return (m_lastDirectionX < 0 && p.x < getPositionX()) || (m_lastDirectionX > 0 && p.x > getPositionX());
+	}
+
 	bool isTouchingGround() const
 	{
 		return m_touchingGround;
@@ -68,12 +73,12 @@ class Character
 		return m_entity.GetPositionXY();
 	}
 	
-	vector2 getPositionX()
+	float getPositionX()
 	{
 		return m_entity.GetPositionX();
 	}
 	
-	vector2 getPositionY()
+	float getPositionY()
 	{
 		return m_entity.GetPositionY();
 	}
@@ -90,7 +95,6 @@ class Character
 		// if there's movement, update animation
 		if (movementSpeed != 0.0f)
 		{
-			
 			// apply movement horizontally, keeping current vertical velocity (let gravity work alone)
 			const vector2 currentVelocity = physicsController.GetLinearVelocity();
 			physicsController.SetLinearVelocity(vector2(movementSpeed, currentVelocity.y));
@@ -99,13 +103,32 @@ class Character
 			m_frameColumn = m_frameTimer.update(0, 3, 150);
 
 			// find correct row in sprite sheet depending on direction
-			m_directionLine = (movementSpeed > 0) ? 2 : 1;
-
-			// find the side the character is facing
-			m_lastDirectionX = (movementSpeed > 0) ? 1 : -1;
+			if (movementSpeed > 0)
+			{
+				m_lastDirectionX = 1;
+				m_directionLine = 2;
+			}
+			else if (movementSpeed < 0)
+			{
+				m_lastDirectionX = -1;
+				m_directionLine = 1;
+			}
 		}
 		else
 		{
+			// process direction changes
+			const float directionChangeRequest = m_characterController.getDirectionChangeRequest();
+			if (directionChangeRequest < 0.0f)
+			{
+				m_lastDirectionX = -1.0f;
+				m_directionLine = 1;
+			}
+			else if (directionChangeRequest > 0.0f)
+			{
+				m_lastDirectionX = 1.0f;
+				m_directionLine = 2;
+			}
+
 			// if theres no horizontal movement, break character
 			const vector2 currentVelocity = physicsController.GetLinearVelocity();
 			physicsController.SetLinearVelocity(vector2(0.0f, currentVelocity.y));

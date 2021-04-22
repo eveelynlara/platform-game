@@ -4,4 +4,5 @@
 	float getMovementSpeed() const;
 	float getJumpImpulse() const;
 	KEY_STATE fireState() const;
+	float getDirectionChangeRequest() const;
 }

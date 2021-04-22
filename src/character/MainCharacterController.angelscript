@@ -32,6 +32,11 @@
 		}
 	}
 
+	float getDirectionChangeRequest() const override
+	{
+		return 0.0f;
+	}
+
 	KEY_STATE fireState() const
 	{
 		return input.GetKeyState(K_SPACE);

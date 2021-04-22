@@ -19,4 +19,9 @@
 	{
 		return KS_UP;
 	}
+
+	float getDirectionChangeRequest() const override
+	{
+		return 0.0f;
+	}
 }

@@ -11,6 +11,8 @@ class NPCFollowPlayerController : CharacterController
 	private float distanceBetweenCharacters = 250.0f;
 	private enemyState enemyState;
 
+	private float m_directionChangeRequest = 0.0f;
+
 	private Character@ m_character;
 	
 	vector2 m_followedCharacterPos;
@@ -35,6 +37,8 @@ class NPCFollowPlayerController : CharacterController
 		const float npcSpeed = 4.0f;
 		const float jumpImpulse = 9.0f;
 		
+		m_directionChangeRequest = 0.0f;
+
 		switch(enemyState)
 		{
 			case moveTowardsCharacter:
@@ -53,7 +57,10 @@ class NPCFollowPlayerController : CharacterController
 			break;
 
 			case reachedAttackRange:
-				//TODO: aim and attack
+				if (!thisCharacter.isPointingAt(m_followedCharacterPos))
+				{
+					m_directionChangeRequest = sign(m_followedCharacterPos.x - thisCharacter.getPositionX());
+				}
 
 				//if player is out of attack range, come back to moveTowardsCharacter
 				if(abs(m_followedCharacterPos.x - m_npcCharacterPos.x) > distanceBetweenCharacters)
@@ -64,6 +71,11 @@ class NPCFollowPlayerController : CharacterController
 
 			default:
 		}
+	}
+
+	float getDirectionChangeRequest() const override
+	{
+		return m_directionChangeRequest;
 	}
 
 	float getMovementSpeed() const
