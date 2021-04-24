@@ -68,12 +68,12 @@ class Character
 		return m_entity.GetPositionXY();
 	}
 	
-	float getPositionX()
+	vector2 getPositionX()
 	{
 		return m_entity.GetPositionX();
 	}
 	
-	float getPositionY()
+	vector2 getPositionY()
 	{
 		return m_entity.GetPositionY();
 	}
@@ -118,17 +118,6 @@ class Character
 	float getCharacterMovementSpeed()
 	{
 		return m_movementSpeed;
-	}
-
-	float getCharacterDirectionX()
-	{
-		return m_lastDirectionX;
-	}
-
-	void setCharacterDirectionX(float dir)
-	{
-		m_lastDirectionX = dir;
-		m_directionLine = (m_lastDirectionX > 0) ? 2 : 1;
 	}
 
 	private void updateJumpImpulse(ETHPhysicsController@ physicsController, const float jumpImpulse)
