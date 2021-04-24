@@ -1,4 +1,4 @@
-﻿enum enemyState
+enum enemyState
 {
     moveTowardsCharacter,
 	reachedAttackRange		
@@ -10,6 +10,7 @@ class NPCFollowPlayerController : CharacterController
 	private float m_jumpImpulse = 0.0f;
 	private float distanceBetweenCharacters = 250.0f;
 	private enemyState enemyState;
+	private float npcSpeed = 4.0f;
 
 	private Character@ m_character;
 	
@@ -31,9 +32,6 @@ class NPCFollowPlayerController : CharacterController
 
 		m_movementSpeed = 0.0f;
 		m_jumpImpulse = 0.0f;
-
-		const float npcSpeed = 4.0f;
-		const float jumpImpulse = 9.0f;
 		
 		switch(enemyState)
 		{
@@ -53,7 +51,9 @@ class NPCFollowPlayerController : CharacterController
 			break;
 
 			case reachedAttackRange:
+
 				//TODO: aim and attack
+				thisCharacter.setCharacterDirectionX(pointTowardsCharacter());
 
 				//if player is out of attack range, come back to moveTowardsCharacter
 				if(abs(m_followedCharacterPos.x - m_npcCharacterPos.x) > distanceBetweenCharacters)
@@ -64,6 +64,11 @@ class NPCFollowPlayerController : CharacterController
 
 			default:
 		}
+	}
+
+	float pointTowardsCharacter()
+	{
+		return (m_followedCharacterPos.x > m_npcCharacterPos.x) ? 1 : -1;
 	}
 
 	float getMovementSpeed() const
