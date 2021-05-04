@@ -9,8 +9,10 @@ class NPCFollowPlayerController : CharacterController
 	private float m_movementSpeed = 0.0f;
 	private float m_jumpImpulse = 0.0f;
 	private float distanceBetweenCharacters = 250.0f;
-	private enemyState enemyState;
 	private float npcSpeed = 4.0f;
+	private float nextShootTime = 0.0f;
+	private float fireRate = 1000.0f;
+	private enemyState enemyState;
 
 	private Character@ m_character;
 	
@@ -18,7 +20,9 @@ class NPCFollowPlayerController : CharacterController
 	vector2 m_npcCharacterPos;
 	
 	private bool m_touchingSinglePiece = false;
-		
+	
+	private KEY_STATE shootState = KS_UP;
+
 	NPCFollowPlayerController(Character@ characterFollowed)
 	{
 		@m_character = characterFollowed;
@@ -52,14 +56,19 @@ class NPCFollowPlayerController : CharacterController
 
 			case reachedAttackRange:
 
-				//TODO: aim and attack
+				//aim and attack
 				thisCharacter.setCharacterDirectionX(pointTowardsCharacter());
+				if(GetTime() > nextShootTime){
+					shootState = KS_HIT;
+					nextShootTime = GetTime() + fireRate;
+				}
 
 				//if player is out of attack range, come back to moveTowardsCharacter
 				if(abs(m_followedCharacterPos.x - m_npcCharacterPos.x) > distanceBetweenCharacters)
 				{
 					enemyState = moveTowardsCharacter;
 				}
+
 				break;
 
 			default:
@@ -83,6 +92,6 @@ class NPCFollowPlayerController : CharacterController
 
 	KEY_STATE fireState() const
 	{
-		return KS_UP;
+		return shootState;
 	}
 }
