@@ -131,6 +131,17 @@ class Character
 		m_directionLine = (m_lastDirectionX > 0) ? 2 : 1;
 	}
 
+	// usar apenas no characters manager
+	void destroy()
+	{
+		DeleteEntity(m_entity);
+	}
+
+	bool isDead() const
+	{
+		return (m_entity.GetInt("hp") < 0);
+	}
+
 	private void updateJumpImpulse(ETHPhysicsController@ physicsController, const float jumpImpulse)
 	{
 		const vector2 currentVelocity = physicsController.GetLinearVelocity();
@@ -211,14 +222,6 @@ void ETHBeginContactCallback_Character(
 	    {
 	    	thisEntity.SetUInt("reached_barrier", 0 /*true*/);
 	    }
-	}
-}
-
-void ETHCallback_Character(ETHEntity@ thisEntity, ETHEntity@ other)
-{
-	if(thisEntity.GetInt("hp") <= 0)
-	{
-		DeleteEntity(thisEntity);
 	}
 }
 

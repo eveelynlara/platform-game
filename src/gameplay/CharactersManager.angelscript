@@ -9,9 +9,17 @@ class CharactersManager
 	
 	void update()
 	{
-		for(uint i = 0; i < m_character.length(); i++)
+		for (uint i = 0; i < m_character.length();)
 		{
+			if (m_character[i].isDead())
+			{
+				m_character[i].destroy();
+				m_character.removeAt(i);
+				continue;
+			}
+
 			m_character[i].update();
+			i++;
 		}
 	}
 }
