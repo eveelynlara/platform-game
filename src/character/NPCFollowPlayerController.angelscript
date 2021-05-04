@@ -1,4 +1,4 @@
-enum enemyState
+﻿enum enemyState
 {
     moveTowardsCharacter,
 	reachedAttackRange		
@@ -10,7 +10,7 @@ class NPCFollowPlayerController : CharacterController
 	private float m_jumpImpulse = 0.0f;
 	private float distanceBetweenCharacters = 250.0f;
 	private float npcSpeed = 4.0f;
-	private float nextShootTime = 0.0f;
+	private float m_fireElapsedTime = 0.0f;
 	private float fireRate = 1000.0f;
 	private enemyState enemyState;
 
@@ -34,6 +34,8 @@ class NPCFollowPlayerController : CharacterController
 		m_followedCharacterPos = m_character.getPosition();
 		m_npcCharacterPos = thisCharacter.getPosition();
 
+		shootState = KS_UP;
+
 		m_movementSpeed = 0.0f;
 		m_jumpImpulse = 0.0f;
 		
@@ -55,12 +57,13 @@ class NPCFollowPlayerController : CharacterController
 			break;
 
 			case reachedAttackRange:
+				m_fireElapsedTime += GetLastFrameElapsedTimeF();
 
 				//aim and attack
 				thisCharacter.setCharacterDirectionX(pointTowardsCharacter());
-				if(GetTime() > nextShootTime){
+				if (m_fireElapsedTime >= fireRate) {
 					shootState = KS_HIT;
-					nextShootTime = GetTime() + fireRate;
+					m_fireElapsedTime -= fireRate;
 				}
 
 				//if player is out of attack range, come back to moveTowardsCharacter

@@ -46,7 +46,7 @@ class Character
 
 		if (m_characterController.fireState() == KS_HIT)
 		{
-			@fireball = Fireball("fireball.ent", m_entity.GetPositionXY(), m_lastDirectionX);
+			@fireball = Fireball("fireball.ent", m_entity.GetInt("team"), m_entity.GetPositionXY(), m_lastDirectionX);
 			m_fireballsManager.addFireball(@fireball);
 
 			PlaySample("soundfx/explosion_small.mp3");
