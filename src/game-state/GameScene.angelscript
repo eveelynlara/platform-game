@@ -18,6 +18,7 @@ class GameScene : Scene
 	void onCreated() override
 {		
 		LoadMusic("soundfx/foolboymedia__floating-in-the-midnight-breeze.wav");
+		LoopSample("soundfx/foolboymedia__floating-in-the-midnight-breeze.wav", true);
 		PlaySample("soundfx/foolboymedia__floating-in-the-midnight-breeze.wav");
 
 		@m_exitButton = Button("sprites/return_button.png", vector2(0.0f, 0.0f), vector2(0.0f, 0.0f));
