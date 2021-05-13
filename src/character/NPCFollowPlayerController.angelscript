@@ -8,10 +8,10 @@ class NPCFollowPlayerController : CharacterController
 {
 	private float m_movementSpeed = 0.0f;
 	private float m_jumpImpulse = 0.0f;
-	private float distanceBetweenCharacters = 250.0f;
+	private float distanceBetweenCharacters = 350.0f;
 	private float npcSpeed = 4.0f;
-	private float nextShootTime = 0.0f;
-	private float fireRate = 1000.0f;
+	private float m_fireElapsedTime = 0.0f;
+	private float fireRate = 2000.0f;
 	private enemyState enemyState;
 
 	private Character@ m_character;
@@ -33,6 +33,8 @@ class NPCFollowPlayerController : CharacterController
 		ETHInput@ input = GetInputHandle();
 		m_followedCharacterPos = m_character.getPosition();
 		m_npcCharacterPos = thisCharacter.getPosition();
+
+		shootState = KS_UP;
 
 		m_movementSpeed = 0.0f;
 		m_jumpImpulse = 0.0f;
@@ -58,9 +60,10 @@ class NPCFollowPlayerController : CharacterController
 
 				//aim and attack
 				thisCharacter.setCharacterDirectionX(pointTowardsCharacter());
-				if(GetTime() > nextShootTime){
+				
+				if(GetTimeF() > m_fireElapsedTime){
 					shootState = KS_HIT;
-					nextShootTime = GetTime() + fireRate;
+					m_fireElapsedTime = GetTimeF() + fireRate;
 				}
 
 				//if player is out of attack range, come back to moveTowardsCharacter

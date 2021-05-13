@@ -7,8 +7,8 @@ class Character
 	private float m_lastDirectionX = 1;
 	private uint m_frameColumn = 0;
 	private bool m_touchingGround = false;
+	private int m_maxJumpsInTheAir = 1;
 	private int m_jumpInTheAirCount = 0;
-	private int m_maxJumpsInTheAir = 10;
 	private float m_movementSpeed;
 
 	private CharacterController@ m_characterController = DummyController();
@@ -20,6 +20,7 @@ class Character
 		// add character entity and rename it to "character" for matching character-
 		// specific entity callback functions
 		AddEntity(entityName, vector3(pos, -2.0f), 0.0f /*rotation*/, m_entity, "Character", 1.0f /*scale*/);
+		LoadSoundEffect("soundfx/explosion_small.mp3");
 	}
 	
 	void setController(CharacterController@ characterController)
@@ -46,7 +47,7 @@ class Character
 
 		if (m_characterController.fireState() == KS_HIT)
 		{
-			@fireball = Fireball("fireball.ent", m_entity.GetPositionXY(), m_lastDirectionX);
+			@fireball = Fireball("fireball.ent", m_entity.GetInt("team"), m_entity.GetPositionXY(), m_lastDirectionX);
 			m_fireballsManager.addFireball(@fireball);
 
 			PlaySample("soundfx/explosion_small.mp3");
@@ -61,6 +62,11 @@ class Character
 	bool isTouchingGround() const
 	{
 		return m_touchingGround;
+	}
+
+	bool isDead() const
+	{
+		return (m_entity.GetInt("hp") <= 0);
 	}
 	
 	vector2 getPosition()
@@ -131,6 +137,14 @@ class Character
 		m_directionLine = (m_lastDirectionX > 0) ? 2 : 1;
 	}
 
+	void destroy()
+	{
+		if(m_entity.GetInt("hp") <= 0)
+		{
+			DeleteEntity(m_entity);
+		}
+	}
+
 	private void updateJumpImpulse(ETHPhysicsController@ physicsController, const float jumpImpulse)
 	{
 		const vector2 currentVelocity = physicsController.GetLinearVelocity();
@@ -160,7 +174,6 @@ class Character
 			physicsController.SetLinearVelocity(vector2(currentVelocity.x, jumpImpulse));
 			++m_jumpInTheAirCount;
 		}
-		
 	}
 
 	private void checkGroundTouch()
@@ -213,18 +226,3 @@ void ETHBeginContactCallback_Character(
 	    }
 	}
 }
-
-void ETHCallback_Character(ETHEntity@ thisEntity, ETHEntity@ other)
-{
-	if(thisEntity.GetInt("hp") <= 0)
-	{
-		DeleteEntity(thisEntity);
-	}
-}
-
-void ETHConstructorCallback_Character(ETHEntity@ thisEntity)
-{
-	LoadSoundEffect("soundfx/explosion_small.mp3");
-}
-
-
