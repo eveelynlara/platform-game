@@ -95,6 +95,11 @@ void ETHCallback_Fireball(ETHEntity@ thisEntity)
 		PlaySample("soundfx/touchedSup.wav");
 		DeleteEntity(thisEntity);
 	}
+
+	if (!(utils::isWorldSpacePointInScreenWithTolerance(thisEntity.GetPositionXY(), vector2(64.0f, 32.0f))))
+	{
+		DeleteEntity(thisEntity);
+	}
 }
 
 void ETHConstructorCallback_Fireball(ETHEntity@ thisEntity)
