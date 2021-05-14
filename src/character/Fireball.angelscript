@@ -86,6 +86,7 @@ void ETHCallback_Fireball(ETHEntity@ thisEntity)
 {
 	if(thisEntity.GetUInt("touchedVertical") != 0)
 	{
+		SetSampleVolume("soundfx/ball_touching_vertical.wav", 0.1f);
 		PlaySample("soundfx/ball_touching_vertical.wav");
 		DeleteEntity(thisEntity);
 	}
