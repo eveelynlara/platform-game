@@ -11,7 +11,7 @@ class NPCFollowPlayerController : CharacterController
 	private float distanceBetweenCharacters = 350.0f;
 	private float npcSpeed = 4.0f;
 	private float m_fireElapsedTime = 0.0f;
-	private float fireRate = 2000.0f;
+	private float fireRate = 1700.0f;
 	private enemyState enemyState;
 
 	private Character@ m_character;
@@ -60,10 +60,11 @@ class NPCFollowPlayerController : CharacterController
 
 				//aim and attack
 				thisCharacter.setCharacterDirectionX(pointTowardsCharacter());
-				
-				if(GetTimeF() > m_fireElapsedTime){
+
+				m_fireElapsedTime += GetLastFrameElapsedTimeF();			
+				if(m_fireElapsedTime > fireRate){
 					shootState = KS_HIT;
-					m_fireElapsedTime = GetTimeF() + fireRate;
+					m_fireElapsedTime -= fireRate;
 				}
 
 				//if player is out of attack range, come back to moveTowardsCharacter
